@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
+        VStack {
             TabView {
                 Text("The First Tab")
                     .badge(10)
@@ -23,7 +23,7 @@ struct ContentView: View {
                         Image(systemName: "gamecontroller.fill")
                         Text("게임")
                     }
-                Text("The First Tab")
+                AppView()
                     .badge(10)
                     .tabItem {
                         Image(systemName: "square.stack.3d.up.fill")
