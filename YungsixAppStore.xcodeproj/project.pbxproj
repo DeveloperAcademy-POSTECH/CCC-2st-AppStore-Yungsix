@@ -12,6 +12,7 @@
 		7928CB18286206BE008E9092 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928CB17286206BE008E9092 /* ContentView.swift */; };
 		7928CB1A286206BE008E9092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7928CB19286206BE008E9092 /* Assets.xcassets */; };
 		7928CB1D286206BE008E9092 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7928CB1C286206BE008E9092 /* Preview Assets.xcassets */; };
+		79FF281328669D7800943108 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF281228669D7800943108 /* AppData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		7928CB17286206BE008E9092 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7928CB19286206BE008E9092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7928CB1C286206BE008E9092 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79FF281228669D7800943108 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				7928CB15286206BE008E9092 /* YungsixAppStoreApp.swift */,
 				7928CB17286206BE008E9092 /* ContentView.swift */,
 				792168B92862E2020043011F /* AppView.swift */,
+				79FF281228669D7800943108 /* AppData.swift */,
 				7928CB19286206BE008E9092 /* Assets.xcassets */,
 				7928CB1B286206BE008E9092 /* Preview Content */,
 			);
@@ -165,6 +168,7 @@
 				7928CB18286206BE008E9092 /* ContentView.swift in Sources */,
 				7928CB16286206BE008E9092 /* YungsixAppStoreApp.swift in Sources */,
 				792168BA2862E2020043011F /* AppView.swift in Sources */,
+				79FF281328669D7800943108 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
