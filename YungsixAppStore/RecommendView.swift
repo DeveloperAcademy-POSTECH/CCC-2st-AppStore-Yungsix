@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct RecommendView: View {
+    @
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.horizontal) {
+            Section {
+                ZStack {
+                    Image("단크2")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 350, height: 200, alignment: .center)
+                        .clipped()
+                }
+            } header: {
+                HStack {
+                    VStack {
+                        Text("다시 발견하기")
+                        Text("앱 이름")
+                        Text("앱 설명")
+                    }
+                    Spacer()
+                }
+            }
+        }
+        .padding()
     }
 }
 
