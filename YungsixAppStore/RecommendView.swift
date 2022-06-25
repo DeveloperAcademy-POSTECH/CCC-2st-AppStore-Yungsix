@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RecommendView: View {
-    @
+    
     var body: some View {
         ScrollView(.horizontal) {
             Section {
