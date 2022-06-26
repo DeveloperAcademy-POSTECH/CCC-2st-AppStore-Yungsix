@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct AppView: View {
+    @State var page = 0
     @State var user = false
+    @StateObject var items = Application()
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack(alignment: .center) {
-                    Divider()
-                    ForEach(0..<100) {
-                        Text("Row \($0)")
+                LazyVStack {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        LazyHStack {
+                            ForEach(items.app) { item in
+                                RecommendView(item: item)
+                            }
+                        }
+                    }
+                    .onAppear {
+                        UIScrollView.appearance().isPagingEnabled = true
                     }
                 }
-                .padding()
             }
             .navigationBarTitle("앱")
             .sheet(isPresented: self.$user) {
