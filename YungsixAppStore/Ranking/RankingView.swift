@@ -16,39 +16,43 @@ struct RankingView: View {
                 Image(items.imgIcon)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 70, height: 70)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .frame(width: 60, height: 60)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
                 VStack {
-                    Text("\(rank)")
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                        .padding(.vertical, 5)
-                    Spacer()
-                }.frame(width: 20, height: 85)
-                VStack(alignment: .leading) {
-                    Text(items.appName)
-                        .font(.title2)
-                        .foregroundColor(.black)
-                    Text(items.appExplain)
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                        .multilineTextAlignment(.leading)
-                        .lineLimit(2)
-                    Spacer()
+                    HStack {
+                        VStack {
+                            Text("\(rank)")
+                                .fontWeight(.semibold)
+                                .foregroundColor(.black)
+                                .padding(.vertical, 5)
+                            Spacer()
+                        }.frame(width: 20, height: 75)
+                        VStack(alignment: .leading) {
+                            Text(items.appName)
+                                .foregroundColor(.black)
+                            Text(items.appExplain)
+                                .font(.footnote)
+                                .foregroundColor(.secondary)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            Spacer()
+                        }
+                        .padding(5)
+                        .frame(width: 160, height: 75, alignment: .leading)
+                        Button {} label: {
+                            Text("받기")
+                                .bold()
+                        }
+                        .frame(width: 75, height: 30, alignment: .center)
+                        .background(.bar)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        Spacer()
+                    }.padding(.bottom, -10)
+                    Divider()
                 }
-                .padding(5)
-                .frame(width: 160, height: 85, alignment: .leading)
-                Button {} label: {
-                    Text("받기")
-                        .bold()
-                }
-                .frame(width: 75, height: 30, alignment: .center)
-                .background(.quaternary)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
-                Spacer()
             }
-//            .frame(width: 350, height: 100, alignment: .center)
-            .padding(.horizontal, 18)
+            //            .frame(width: 350, height: 100, alignment: .center)
+            .padding(.horizontal, 19)
         }
     }
 }

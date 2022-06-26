@@ -5,6 +5,7 @@
 //  Created by 최윤석 on 2022/06/26.
 //
 
+import Foundation
 import SwiftUI
 
 struct RankingList: View {
@@ -15,14 +16,13 @@ struct RankingList: View {
             Section {
                 VStack {
                     ScrollView(.horizontal, showsIndicators: false) {
-                        LazyHStack {
-                            ForEach(items) { item in
-                                VStack {
-                                    RankingView(items: item, rank: rank)
-                                    Divider()
-                                    RankingView(items: item, rank: rank)
-                                    Divider()
-                                    RankingView(items: item, rank: rank)
+                        ForEach((0..<3).reversed(), id: \.self) { row in
+                            LazyHStack {
+                                ForEach(0..<items.count / 3) { col in
+                                    VStack {
+                                        RankingView(items: items[searchCell(row: row, col: col)],
+                                                    rank: searchCell(row: row, col: col) + 1)
+                                    }
                                 }
                             }
                         }
@@ -31,7 +31,7 @@ struct RankingList: View {
                         UIScrollView.appearance().isPagingEnabled = true
                     }
                 }
-                .frame(width: 400, height: 300, alignment: .center)
+                .frame(width: 400, height: 220, alignment: .center)
             } header: {
                 Divider()
                 HStack {
@@ -40,9 +40,12 @@ struct RankingList: View {
                         .bold()
                     Spacer()
                     Button("모두 보기") {}
-                }.padding(.horizontal)
+                }
             }
-        }
+        }.padding()
+    }
+    func searchCell(row: Int, col: Int) -> Int {
+        return (((col + 1) * 3) - row) - 1
     }
 }
 
