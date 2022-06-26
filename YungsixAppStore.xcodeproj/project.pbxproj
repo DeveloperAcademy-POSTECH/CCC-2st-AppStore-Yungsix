@@ -17,6 +17,7 @@
 		79461FEE28683EDA004B49C6 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461FED28683EDA004B49C6 /* RankingView.swift */; };
 		79461FF028684F91004B49C6 /* RankingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461FEF28684F91004B49C6 /* RankingList.swift */; };
 		79461FF32868A81E004B49C6 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461FF22868A81E004B49C6 /* EventView.swift */; };
+		79461FF52868EB11004B49C6 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461FF42868EB11004B49C6 /* EventList.swift */; };
 		79FF281328669D7800943108 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF281228669D7800943108 /* AppData.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		79461FED28683EDA004B49C6 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
 		79461FEF28684F91004B49C6 /* RankingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingList.swift; sourceTree = "<group>"; };
 		79461FF22868A81E004B49C6 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		79461FF42868EB11004B49C6 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 		79FF281228669D7800943108 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				79461FF22868A81E004B49C6 /* EventView.swift */,
+				79461FF42868EB11004B49C6 /* EventList.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				792168BA2862E2020043011F /* AppView.swift in Sources */,
 				7921F26E28648C9600EF8745 /* RecommendView.swift in Sources */,
 				79461FEA28683517004B49C6 /* RecommendList.swift in Sources */,
+				79461FF52868EB11004B49C6 /* EventList.swift in Sources */,
 				79FF281328669D7800943108 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

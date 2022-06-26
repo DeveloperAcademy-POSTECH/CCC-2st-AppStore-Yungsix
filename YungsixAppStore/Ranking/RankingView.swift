@@ -45,7 +45,7 @@ struct RankingView: View {
                         }
                         .frame(width: 75, height: 30, alignment: .center)
                         .background(.bar)
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .clipShape(RoundedRectangle(cornerRadius: 15))
                         Spacer()
                     }.padding(.bottom, -10)
                     Divider()

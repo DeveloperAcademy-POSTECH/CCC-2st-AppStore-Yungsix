@@ -42,9 +42,9 @@ struct RecommendView: View {
                                         .foregroundColor(.white)
                                 }
                                 .padding(.horizontal, 20)
-                                .padding(.vertical, 5)
+                                .padding(.vertical, 3)
                                 .background(.bar)
-                                .clipShape(RoundedRectangle(cornerRadius: 20))
+                                .clipShape(RoundedRectangle(cornerRadius: 15))
                                 Text("앱 내 구입")
                                     .font(.caption2)
                                     .foregroundColor(.white)
