@@ -14,18 +14,7 @@ struct AppView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVStack {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        LazyHStack {
-                            ForEach(items.app) { item in
-                                RecommendView(item: item)
-                            }
-                        }
-                    }
-                    .onAppear {
-                        UIScrollView.appearance().isPagingEnabled = true
-                    }
-                }
+                RecommendList(items: items.app)
             }
             .navigationBarTitle("앱")
             .sheet(isPresented: self.$user) {
