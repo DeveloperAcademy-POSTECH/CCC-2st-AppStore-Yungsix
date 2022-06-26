@@ -30,7 +30,44 @@ struct EventView: View {
                     Spacer()
                 }
             }.foregroundColor(.white)
-        }.frame(width: 340, height: 250, alignment: .center)
+            HStack(spacing: 5) {
+                Image(item.imgIcon)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 40, height: 40, alignment: .center)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .padding(.leading, 10)
+                VStack(alignment: .leading) {
+                    Text(item.appName)
+                        .fontWeight(.bold)
+                    Text(item.appExplain)
+                        .foregroundColor(.secondary)
+                }
+                .frame(width: 170)
+                .lineLimit(1)
+                .foregroundColor(.black)
+                Spacer()
+                VStack {
+                    Button {} label: {
+                        Text("받기")
+                            .bold()
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 5)
+                    .background(.quaternary)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    Text("앱 내 구입")
+                        .font(.caption2)
+                        .foregroundColor(.secondary)
+                        .padding(.top, -5)
+                        .padding(.bottom, 5)
+                }
+                Spacer()
+            }
+        }
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .shadow(radius: 15)
+        .frame(width: 340, height: 310, alignment: .center)
     }
 }
 
