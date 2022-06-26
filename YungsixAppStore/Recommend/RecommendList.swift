@@ -10,7 +10,7 @@ import SwiftUI
 struct RecommendList: View {
     var items: [Items]
     var body: some View {
-        LazyVStack {
+        VStack {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack {
                     ForEach(items) { item in

@@ -14,7 +14,10 @@ struct AppView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                RecommendList(items: items.app)
+                LazyVStack {
+                    RecommendList(items: items.app)
+                    RankingList(items: items.app)
+                }
             }
             .navigationBarTitle("앱")
             .sheet(isPresented: self.$user) {

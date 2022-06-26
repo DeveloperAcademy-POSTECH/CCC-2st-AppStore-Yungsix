@@ -62,10 +62,10 @@ struct RecommendView: View {
                                 .font(.caption)
                                 .foregroundColor(.blue)
                             Text(item.appName)
-                                .font(.title)
+                                .font(.title2)
                                 .foregroundColor(.black)
                             Text(item.appExplain)
-                                .font(.title2)
+                                .font(.title3)
                                 .foregroundColor(.secondary)
                         }
                         Spacer()
