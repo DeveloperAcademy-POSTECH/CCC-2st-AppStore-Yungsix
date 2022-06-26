@@ -16,6 +16,7 @@
 		79461FEA28683517004B49C6 /* RecommendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461FE928683517004B49C6 /* RecommendList.swift */; };
 		79461FEE28683EDA004B49C6 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461FED28683EDA004B49C6 /* RankingView.swift */; };
 		79461FF028684F91004B49C6 /* RankingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461FEF28684F91004B49C6 /* RankingList.swift */; };
+		79461FF32868A81E004B49C6 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461FF22868A81E004B49C6 /* EventView.swift */; };
 		79FF281328669D7800943108 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF281228669D7800943108 /* AppData.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		79461FE928683517004B49C6 /* RecommendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendList.swift; sourceTree = "<group>"; };
 		79461FED28683EDA004B49C6 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
 		79461FEF28684F91004B49C6 /* RankingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingList.swift; sourceTree = "<group>"; };
+		79461FF22868A81E004B49C6 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		79FF281228669D7800943108 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 				792168B92862E2020043011F /* AppView.swift */,
 				79461FEB28683A22004B49C6 /* Recommend */,
 				79461FEC28683EB6004B49C6 /* Ranking */,
+				79461FF12868A7CC004B49C6 /* Event */,
 				79FF281228669D7800943108 /* AppData.swift */,
 				7928CB19286206BE008E9092 /* Assets.xcassets */,
 				7928CB1B286206BE008E9092 /* Preview Content */,
@@ -99,6 +102,14 @@
 				79461FED28683EDA004B49C6 /* RankingView.swift */,
 			);
 			path = Ranking;
+			sourceTree = "<group>";
+		};
+		79461FF12868A7CC004B49C6 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				79461FF22868A81E004B49C6 /* EventView.swift */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +207,7 @@
 				79461FEE28683EDA004B49C6 /* RankingView.swift in Sources */,
 				7928CB18286206BE008E9092 /* ContentView.swift in Sources */,
 				79461FF028684F91004B49C6 /* RankingList.swift in Sources */,
+				79461FF32868A81E004B49C6 /* EventView.swift in Sources */,
 				7928CB16286206BE008E9092 /* YungsixAppStoreApp.swift in Sources */,
 				792168BA2862E2020043011F /* AppView.swift in Sources */,
 				7921F26E28648C9600EF8745 /* RecommendView.swift in Sources */,
