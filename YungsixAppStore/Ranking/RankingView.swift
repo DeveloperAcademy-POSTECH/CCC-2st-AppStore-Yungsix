@@ -52,7 +52,7 @@ struct RankingView: View {
                 }
             }
             //            .frame(width: 350, height: 100, alignment: .center)
-            .padding(.horizontal, 19)
+            .padding(.horizontal, 22)
         }
     }
 }
