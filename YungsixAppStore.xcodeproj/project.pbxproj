@@ -109,8 +109,8 @@
 		79461FF12868A7CC004B49C6 /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				79461FF22868A81E004B49C6 /* EventView.swift */,
 				79461FF42868EB11004B49C6 /* EventList.swift */,
+				79461FF22868A81E004B49C6 /* EventView.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";

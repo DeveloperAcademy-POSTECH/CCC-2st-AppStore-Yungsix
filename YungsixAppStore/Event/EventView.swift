@@ -9,6 +9,7 @@ import SwiftUI
 
 struct EventView: View {
     var item: Items
+    @State var showSheet = false
     var body: some View {
         VStack {
             ZStack {
@@ -73,6 +74,13 @@ struct EventView: View {
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .shadow(radius: 15, x: 10, y: 10)
         .frame(width: 340, height: 310, alignment: .center)
+        .padding(.horizontal, 21)
+        .onTapGesture {
+            showSheet = true
+        }
+        .sheet(isPresented: $showSheet, content: {
+            Text("Event Sheet")
+        })
     }
 }
 

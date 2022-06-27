@@ -17,6 +17,7 @@ struct AppView: View {
                 LazyVStack {
                     RecommendList(items: items.app)
                     RankingList(items: items.app)
+                    EventList(items: items.app)
                 }
             }
             .navigationBarTitle("앱")
