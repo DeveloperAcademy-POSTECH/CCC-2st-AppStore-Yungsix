@@ -7,18 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		792168BA2862E2020043011F /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792168B92862E2020043011F /* AppView.swift */; };
+		7921F26E28648C9600EF8745 /* RecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921F26D28648C9600EF8745 /* RecommendView.swift */; };
 		7928CB16286206BE008E9092 /* YungsixAppStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928CB15286206BE008E9092 /* YungsixAppStoreApp.swift */; };
 		7928CB18286206BE008E9092 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928CB17286206BE008E9092 /* ContentView.swift */; };
 		7928CB1A286206BE008E9092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7928CB19286206BE008E9092 /* Assets.xcassets */; };
 		7928CB1D286206BE008E9092 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7928CB1C286206BE008E9092 /* Preview Assets.xcassets */; };
+		79461FEA28683517004B49C6 /* RecommendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461FE928683517004B49C6 /* RecommendList.swift */; };
+		79461FEE28683EDA004B49C6 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461FED28683EDA004B49C6 /* RankingView.swift */; };
+		79461FF028684F91004B49C6 /* RankingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461FEF28684F91004B49C6 /* RankingList.swift */; };
+		79461FF32868A81E004B49C6 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461FF22868A81E004B49C6 /* EventView.swift */; };
+		79461FF52868EB11004B49C6 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461FF42868EB11004B49C6 /* EventList.swift */; };
+		79FF281328669D7800943108 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF281228669D7800943108 /* AppData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		792168B92862E2020043011F /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		7921F26D28648C9600EF8745 /* RecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendView.swift; sourceTree = "<group>"; };
 		7928CB12286206BE008E9092 /* YungsixAppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YungsixAppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7928CB15286206BE008E9092 /* YungsixAppStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YungsixAppStoreApp.swift; sourceTree = "<group>"; };
 		7928CB17286206BE008E9092 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7928CB19286206BE008E9092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7928CB1C286206BE008E9092 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79461FE928683517004B49C6 /* RecommendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendList.swift; sourceTree = "<group>"; };
+		79461FED28683EDA004B49C6 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
+		79461FEF28684F91004B49C6 /* RankingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingList.swift; sourceTree = "<group>"; };
+		79461FF22868A81E004B49C6 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		79461FF42868EB11004B49C6 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		79FF281228669D7800943108 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,11 @@
 			children = (
 				7928CB15286206BE008E9092 /* YungsixAppStoreApp.swift */,
 				7928CB17286206BE008E9092 /* ContentView.swift */,
+				792168B92862E2020043011F /* AppView.swift */,
+				79461FEB28683A22004B49C6 /* Recommend */,
+				79461FEC28683EB6004B49C6 /* Ranking */,
+				79461FF12868A7CC004B49C6 /* Event */,
+				79FF281228669D7800943108 /* AppData.swift */,
 				7928CB19286206BE008E9092 /* Assets.xcassets */,
 				7928CB1B286206BE008E9092 /* Preview Content */,
 			);
@@ -67,6 +88,33 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		79461FEB28683A22004B49C6 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				79461FE928683517004B49C6 /* RecommendList.swift */,
+				7921F26D28648C9600EF8745 /* RecommendView.swift */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		79461FEC28683EB6004B49C6 /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+				79461FEF28684F91004B49C6 /* RankingList.swift */,
+				79461FED28683EDA004B49C6 /* RankingView.swift */,
+			);
+			path = Ranking;
+			sourceTree = "<group>";
+		};
+		79461FF12868A7CC004B49C6 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				79461FF42868EB11004B49C6 /* EventList.swift */,
+				79461FF22868A81E004B49C6 /* EventView.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +122,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7928CB20286206BE008E9092 /* Build configuration list for PBXNativeTarget "YungsixAppStore" */;
 			buildPhases = (
+				792168BB2862F88A0043011F /* SwiftLint */,
 				7928CB0E286206BE008E9092 /* Sources */,
 				7928CB0F286206BE008E9092 /* Frameworks */,
 				7928CB10286206BE008E9092 /* Resources */,
@@ -132,13 +181,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		792168BB2862F88A0043011F /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7928CB0E286206BE008E9092 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79461FEE28683EDA004B49C6 /* RankingView.swift in Sources */,
 				7928CB18286206BE008E9092 /* ContentView.swift in Sources */,
+				79461FF028684F91004B49C6 /* RankingList.swift in Sources */,
+				79461FF32868A81E004B49C6 /* EventView.swift in Sources */,
 				7928CB16286206BE008E9092 /* YungsixAppStoreApp.swift in Sources */,
+				792168BA2862E2020043011F /* AppView.swift in Sources */,
+				7921F26E28648C9600EF8745 /* RecommendView.swift in Sources */,
+				79461FEA28683517004B49C6 /* RecommendList.swift in Sources */,
+				79461FF52868EB11004B49C6 /* EventList.swift in Sources */,
+				79FF281328669D7800943108 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
