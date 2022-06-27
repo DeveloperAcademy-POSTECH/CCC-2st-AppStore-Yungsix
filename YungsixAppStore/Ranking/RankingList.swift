@@ -21,7 +21,7 @@ struct RankingList: View {
                                 ForEach(0..<items.count / 3) { col in
                                     VStack {
                                         RankingView(items: items[(((col + 1) * 3) - row) - 1],
-                                                    rank: (((col + 1) * 3) - row))
+                                                    rank: ((col + 1) * 3) - row)
                                     }
                                 }
                             }
