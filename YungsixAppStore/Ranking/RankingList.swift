@@ -20,8 +20,8 @@ struct RankingList: View {
                             LazyHStack {
                                 ForEach(0..<items.count / 3) { col in
                                     VStack {
-                                        RankingView(items: items[searchCell(row: row, col: col)],
-                                                    rank: searchCell(row: row, col: col) + 1)
+                                        RankingView(items: items[(((col + 1) * 3) - row) - 1],
+                                                    rank: ((col + 1) * 3) - row)
                                     }
                                 }
                             }
@@ -43,9 +43,6 @@ struct RankingList: View {
                 }
             }
         }.padding()
-    }
-    func searchCell(row: Int, col: Int) -> Int {
-        return (((col + 1) * 3) - row) - 1
     }
 }
 
